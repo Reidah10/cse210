@@ -48,5 +48,14 @@ class Program
             sign = "-";
         }
         Console.WriteLine($"You have {modifier} {letter}{sign} in this class.");
+        
+        if (grade >= 70)
+        {
+            Console.WriteLine("Congratulations! You passed the class!");
+        }
+        else
+        {
+            Console.WriteLine("Sorry, you did not pass the class. Keep trying. You can do it!");
+        }
     }
 }
