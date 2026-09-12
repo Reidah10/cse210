@@ -17,5 +17,13 @@ class Entry
         Console.WriteLine(_entryText);
     }
 
-    
+    public bool HasDate(string date)
+    {
+        return _date == date;
+    }
+
+    public string GetString()
+    {
+        return $"{_date}|{_promptText}|{_entryText}";
+    }
 }
